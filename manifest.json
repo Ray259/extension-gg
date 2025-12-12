@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Google Search Rater",
+  "version": "1.0",
+  "description": "Rate Google search results from 1 to 5 stars.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ]
+}

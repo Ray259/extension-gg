@@ -1,0 +1,92 @@
+body {
+  width: 350px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding: 10px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #666;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active {
+  color: #1a73e8;
+  border-bottom-color: #1a73e8;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.group-header {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-list li {
+  background: white;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.item-list li a {
+  text-decoration: none;
+  color: #1a73e8;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.item-list li a:hover {
+  text-decoration: underline;
+}
+
+.item-meta {
+  font-size: 11px;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag-badge {
+  background: #e8f0fe;
+  color: #1a73e8;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-right: 4px;
+}
